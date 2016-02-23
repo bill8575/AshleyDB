@@ -1,2 +1,8 @@
 # This line entered started with dev branch 02/01/2016
 $DEV = 1;
+
+# Change test$1, 02/23/2016 10:25 AM
+$FILE = 512K;
+
+# Change test$1, 02/23/2016 10:27 AM
+$FILETYPE = "FAT";
