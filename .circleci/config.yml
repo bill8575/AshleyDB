@@ -6,14 +6,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: sourcey/spectacle
+      - image: circleci/PHP:5-fpm
     steps:
       - checkout
-      - run: composer install -n --prefer-dist
-      - save_cache:
-          paths:
-            - ./vendor
-          key: v1-dependencies-{{ checksum "composer.json" }}
-        
-      # run tests!
-      - run: phpunit
+      - run: echo "hello babe"
