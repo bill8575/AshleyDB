@@ -6,7 +6,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/PHP:5-fpm
+      - image: circleci/php:[5-fpm]
     steps:
       - checkout
       - run: echo "hello babe"
